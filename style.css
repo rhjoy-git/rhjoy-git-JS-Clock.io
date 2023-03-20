@@ -334,7 +334,41 @@ body {
     }
 }
 
-
+@media only screen and (max-width: 320px) {   
+    .clock{
+        width: 230px;
+        height: 230px;
+    }
+    .clock .number {
+        padding: 8px;
+    }
+    .analog-text {
+        transform: translate(-50%, -330%);
+    }
+    .clock .hand.second {
+        width: 1.5px;
+        height: 39%;
+    }
+    
+    .clock .hand.minute {
+        height: 30%;
+    }
+    
+    .clock .hand.hour {
+        height: 25%;
+    }
+    .clock::after {
+        width: 15px;
+        height: 15px;
+    }
+    .digital-clock {
+        width: 280px;
+        height: 210px;
+    }
+    .digital-clock .timeP {
+        line-height: 0.8;
+    }
+}
 
 
 
