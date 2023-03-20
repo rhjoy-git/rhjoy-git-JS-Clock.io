@@ -35,6 +35,7 @@ let digitalButton = document.querySelector(".dBtn");
 let Dghour = document.querySelector("#Dghour")
 let Dgminute = document.querySelector("#Dgminute")
 let Dgsecond = document.querySelector("#Dgsecond")
+let meridiem = document.querySelector("#meridiem")
 
 let hour = 00;
 let min = 00;
@@ -91,8 +92,16 @@ function digitalClock() {
 function setTime() {
     if (hour <= 9)
         Dghour.innerHTML = "0" + hour;
-    else if (hour > 9)
+    else if (hour > 9){
+        if(hour > 12){
+            hour -= 12;
+            Dghour.innerHTML = "0" + hour;
+            meridiem.innerHTML = "PM"
+        }else{
         Dghour.innerHTML = hour;
+        meridiem.innerHTML = "AM"
+        }
+    }
     if (min <= 9)
         Dgminute.innerHTML = "0" + min;
     else if (min > 9)
