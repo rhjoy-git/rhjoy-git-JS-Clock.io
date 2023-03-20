@@ -283,7 +283,55 @@ body {
 }
 
 @media only screen and (max-width: 360px) {
+    .clock{
+        width: 280px;
+        height: 280px;
+    }
+    .clock .number {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .analog-text {
+        font-size: 15px;
+        color: #d5d3d3;
+    }
+    .clock .hand.second {
+        width: 2px;
+        height: 39%;
+    }
     
+    .clock .hand.minute {
+        width: 4px;
+        height: 33%;
+        background: rgb(119, 119, 120);
+    }
+    
+    .clock .hand.hour {
+        width: 8px;
+        height: 26%;
+        background: rgb(137, 139, 137);
+    }
+    .clock::after {
+        width: 16px;
+        height: 16px;
+    }
+    .digital-clock {
+        width: 300px;
+        height: 220px;
+        overflow: hidden;
+    }
+    .d-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .digital-clock .timeP {
+        font-size: 65px;
+        line-height: 0.9;
+    }
+    
+    .digital-clock .timeP #meridiem {
+        font-size: 20px;
+    }
 }
 
 
