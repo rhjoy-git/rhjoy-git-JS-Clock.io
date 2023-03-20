@@ -63,10 +63,9 @@ function digitalClock() {
     }
     if (sec > 59) {
         min++;
-        if(min <= 9) {
+        if (min <= 9) {
             Dgminute.innerHTML = "0" + min;
-        } 
-        else if (min > 9) {
+        } else if (min > 9) {
             Dgminute.innerHTML = min;
         }
         sec = 0;
